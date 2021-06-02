@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Let's make some Pizza!</h1>
+    <p>
+      <label>Flour</label>
+      <input id="inputPounds" type="number" placeholder="Flour(Grams)" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+    </p>
+    <p>Water: <span id="outputWater"></span></p>
+    <p>Sugar: <span id="outputSugar"></span></p>
+    <p>Salt: <span id="outputSalt"></span></p>
+    <p>Yeast: <span id="outputYeast"></span></p>
+    
+    <script>
+    function weightConverter(valNum) {
+      document.getElementById("outputWater").innerHTML=valNum*(64.5/100);
+      document.getElementById("outputSugar").innerHTML=valNum*(2.6/100);
+        document.getElementById("outputSalt").innerHTML=valNum*(1.6/100);
+
+     document.getElementById("outputYeast").innerHTML=valNum*(1.3/100);
+    }
+    </script>
+
+  </body>
+  <script type="text/javascript" src="master.js"></script>
+</html>
