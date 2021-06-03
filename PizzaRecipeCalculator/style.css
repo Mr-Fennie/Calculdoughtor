@@ -1,5 +1,42 @@
+/* fonts
+font-family: 'Bebas Neue', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
+.header-container{
+	/* background-image: url('Calcudoughtor-logo.png');*/
+	max-width: 100%;
+  height: auto;
+	display: block;
+	margin-left: auto;
+  margin-right: auto;
+	align-items: center;
+	justify-content: center;
+	image-orientation: center;
+	height: 60vh;
+	/* display:inline-block; */
+	color:#FFF;
+	border-radius: flex;
+	/* border:1px solid #bbb; */
+	transition: all 0.3s linear;
+}
+
+.cover{
+
+	width: auto;
+	max-width: 100%;
+  height: auto;
+	display: flex;
+  align-items: center;
+  justify-content: center;
+	transition: all 0.3s linear;
+	margin-left: auto;
+  margin-right: auto;
+
+}
+
 body {
-	font: 'Raleway', sans-serif;
+	font: 'Oswald', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
@@ -8,23 +45,26 @@ body {
 	/* background: linear-gradient(rgb(227, 227, 211), rgb(107, 94, 41)); */
   background: linear-gradient(rgb(240, 230, 204), rgb(51, 98, 36));
   background-size: cover;
+	margin: auto 0;
 }
 
 h1 {
-    font: 600 4em 'Raleway', sans-serif;
-    color: rgba(0,0,0,.5);
+    font: 600 2em 'Oswald', sans-serif;
+    color: rgb(107, 94, 41, 0.7);
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .3em;
+    letter-spacing: .28em;
     width: 100%;
+		margin-top: 2.5em;
 }
 
 h3 {
-	font: 900 1.5em 'Raleway', sans-serif;
+	font: 600 1.2em 'Raleway', sans-serif;
     color: rgba(0,0,0,.5);
     text-align: left;
     text-transform: none;
     letter-spacing: 0.01em;
+    text-transform: uppercase;
 }
 
 .line {
@@ -43,18 +83,27 @@ h3 {
 
 .container{
   border: 2px solid;
-  padding: 1em;
-  margin: 5rem;
+  padding: 1.5em;
+  margin: 6rem;
   text-align:left;
-  font: 300 1.5em monospace, sans-serif;
+  font: 300 1.5em 'Bebas Neue', cursive;
+  background-color: rgb(255, 255, 229);
 }
 
 .steps{
-  font: 100 1.5em monospace, sans-serif;
+  font: 100 1.5em 'Raleway', sans-serif;
   text-align:left;
 }
 
 li{
   text-transform: none;
   letter-spacing: 0.01em;
+}
+
+#inputFlour {
+  font: 80 1em 'Raleway', sans-serif;
+  color: rgba(0,0,0,.5);
+  text-transform: none;
+  text-transform: uppercase;
+  letter-spacing: .03em;
 }

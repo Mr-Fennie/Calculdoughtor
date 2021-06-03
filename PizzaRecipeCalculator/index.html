@@ -7,20 +7,29 @@
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta content="description" name="description">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200;300;500;600&display=swap" rel="stylesheet">
+
     <title>Pizza Calculator</title>
 
 
   </head>
   <body>
 
-    <h1>Let's make some Pizza!</h1>
+    <img class="header-container" src='Calcudoughtor-logo.png' alt="" max-width=100% max-height=100%>
+
+    <img class="cover" src='cover.jpg' alt="">
+
+
+    <h1 background>Let's make some Pizza!</h1>
+
 
     <div class="container">
       <h3>You need:</h3>
       <p class="required">Enter the amount of flour you have available and the rest of the required ingredients will generate.</p>
       <p class="required">
         <label>Flour:</label>
-        <input id="inputPounds" type="number" placeholder="Flour(Grams)" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+        <input id="inputFlour" type="number" placeholder="Flour(Grams)" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
       </p>
       <p class="required">Water: <span id="outputWater"></span></p>
       <p class="required">Sugar: <span id="outputSugar"></span></p>
