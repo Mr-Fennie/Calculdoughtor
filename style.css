@@ -40,7 +40,7 @@ body {
     color: rgba(0,0,0,.5);
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .5em;
+    letter-spacing: .2em;
     top: 15%;
 	/* background: linear-gradient(rgb(227, 227, 211), rgb(107, 94, 41)); */
   background: linear-gradient(rgb(240, 230, 204), rgb(51, 98, 36));
@@ -82,9 +82,9 @@ h3 {
 
 
 .container{
-  border: 2px solid;
-  padding: 1.5em;
-  margin: 6rem;
+  border: 1.5px solid;
+  padding: 1.2em;
+  margin: 3rem;
   text-align:left;
   font: 300 1.5em 'Bebas Neue', cursive;
   background-color: rgb(255, 255, 229);
@@ -106,4 +106,26 @@ li{
   text-transform: none;
   text-transform: uppercase;
   letter-spacing: .03em;
+	max-width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    font-size: 0.5em;
+    padding: 0;
+		max-width: 90%;
+  }
+	.cover{
+
+		width: auto;
+		max-width: 100%;
+	  height: auto;
+		display: flex;
+	  align-items: center;
+	  justify-content: center;
+		transition: all 0.3s linear;
+		margin-left: auto;
+	  margin-right: auto;
+
+	}
 }
